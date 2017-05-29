@@ -46,7 +46,7 @@ resource "kong_consumer_basic_auth_credential" "basic_auth_credential" {
     password = "password"
 }
 
-resource "kong_consumer_key_auth_credential" "basic_auth_credential" {
+resource "kong_consumer_key_auth_credential" "key_auth_credential" {
     consumer = "${kong_consumer.consumer.id}"
     key = "key"
 }
